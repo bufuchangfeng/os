@@ -1278,9 +1278,9 @@ vector255:
   jmp __alltraps
 
 __alltraps:
-	push msg
-	call put_str
-	add esp, 4
+	; push msg
+	; call put_str
+	; add esp, 4
 
 	push ds
 	push es
@@ -1300,8 +1300,12 @@ __alltraps:
 	pop es
 	pop ds
 
+	mov al, 0x20
+	out 0xa0, al
+	out 0x20, al
+
 	add esp, 8
-	iretd
+	iret
 
 
 section .data

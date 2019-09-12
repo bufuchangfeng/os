@@ -1,5 +1,6 @@
 #include "stdint.h"
 #include "print.h"
+#include "timer.h"
 #define PIC_M_CTRL 0x20	       
 #define PIC_M_DATA 0x21	       
 #define PIC_S_CTRL 0xa0	       
@@ -43,13 +44,14 @@ void* idt_table[IDT_DESC_CNT];
 
 extern void* vectors[IDT_DESC_CNT];	
 
-static void general_intr_handler(uint8_t vecno){
+void general_intr_handler(uint8_t vecno){
 	if(vecno == 0x27 || vecno == 0x2f){
 		return;
 	}
-	put_str("vector no: 0x");
-	put_int(vecno);
-	put_char('\n');
+	//  put_str("vector no: 0x");
+	// put_str(intr_name[vecno]);
+	// put_int(vecno);
+	// put_char('\n');
 }
 
 static void pic_init(void) {
@@ -118,6 +120,7 @@ void idt_init() {
    idt_desc_init();	
    exception_init();   
    pic_init();
+   timer_init();
 
    uint64_t idt_operand = ((sizeof(idt) - 1) | ((uint64_t)(uint32_t)idt << 16));
    asm volatile("lidt %0" : : "m" (idt_operand));
