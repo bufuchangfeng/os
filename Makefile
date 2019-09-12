@@ -1,4 +1,5 @@
-objects =  build/main.o build/print.o build/interrupt.o build/vectors.o build/timer.o
+objects =  build/main.o build/print.o build/interrupt.o build/vectors.o build/timer.o	\
+	   build/string.o
 
 all: build/kernel.bin boot loader
 	dd if=build/loader.bin of=os.img bs=512 count=4 seek=2 conv=notrunc
@@ -10,6 +11,9 @@ loader:
 	nasm boot/loader.s -o build/loader.bin -I boot/include/
 build/kernel.bin: $(objects)
 	ld -Ttext 0xc0001500 -e main -o build/kernel.bin $(objects) -m elf_i386
+
+build/string.o:
+	gcc -I lib/ -o build/string.o -c -m32 lib/string.c
 build/timer.o:
 	gcc -I kernel/ -I device/ -o build/timer.o device/timer.c -c -m32 -fno-stack-protector -I lib/kernel
 build/print.o:
