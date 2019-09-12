@@ -1,0 +1,1897 @@
+00000000000i[     ] Bochs x86 Emulator 2.6
+00000000000i[     ]   Built from SVN snapshot on September 2nd, 2012
+00000000000i[     ] System configuration
+00000000000i[     ]   processors: 1 (cores=1, HT threads=1)
+00000000000i[     ]   A20 line support: yes
+00000000000i[     ]   load configurable MSRs from file "msrs.def"
+00000000000i[     ] IPS is set to 50000000
+00000000000i[     ] CPU configuration
+00000000000i[     ]   level: 6
+00000000000i[     ]   SMP support: no
+00000000000i[     ]   APIC support: xapic
+00000000000i[     ]   FPU support: yes
+00000000000i[     ]   MMX support: yes
+00000000000i[     ]   3dnow! support: no
+00000000000i[     ]   SEP support: yes
+00000000000i[     ]   SSE support: sse2
+00000000000i[     ]   XSAVE support: no 
+00000000000i[     ]   AES support: no
+00000000000i[     ]   MOVBE support: no
+00000000000i[     ]   ADX support: no
+00000000000i[     ]   x86-64 support: yes
+00000000000i[     ]   1G paging support: no
+00000000000i[     ]   MWAIT support: yes
+00000000000i[     ]   AVX support: no
+00000000000i[     ]   VMX support: 1
+00000000000i[     ] Optimization configuration
+00000000000i[     ]   RepeatSpeedups support: yes
+00000000000i[     ]   Fast function calls: yes
+00000000000i[     ]   Handlers Chaining speedups: no
+00000000000i[     ] Devices configuration
+00000000000i[     ]   NE2000 support: yes
+00000000000i[     ]   PCI support: yes, enabled=yes
+00000000000i[     ]   SB16 support: yes
+00000000000i[     ]   USB support: yes
+00000000000i[     ]   VGA extension support: vbe cirrus
+00000000000i[MEM0 ] allocated memory at 0x7fcf0dcd7010. after alignment, vector=0x7fcf0dcd8000
+00000000000i[MEM0 ] 32.00MB
+00000000000i[MEM0 ] mem block size = 0x00100000, blocks=32
+00000000000i[MEM0 ] rom at 0xfffe0000/131072 ('/usr/share/bochs/BIOS-bochs-latest')
+00000000000i[     ] lt_dlhandle is 0x38757f0
+00000000000i[PLGIN] loaded plugin libbx_hdimage.so
+00000000000i[     ] lt_dlhandle is 0x3876180
+00000000000i[PLGIN] loaded plugin libbx_pci.so
+00000000000i[     ] lt_dlhandle is 0x3876d00
+00000000000i[PLGIN] loaded plugin libbx_pci2isa.so
+00000000000i[     ] lt_dlhandle is 0x3877710
+00000000000i[PLGIN] loaded plugin libbx_acpi.so
+00000000000i[     ] lt_dlhandle is 0x3878110
+00000000000i[PLGIN] loaded plugin libbx_cmos.so
+00000000000i[     ] lt_dlhandle is 0x3878a50
+00000000000i[PLGIN] loaded plugin libbx_dma.so
+00000000000i[     ] lt_dlhandle is 0x38794e0
+00000000000i[PLGIN] loaded plugin libbx_pic.so
+00000000000i[     ] lt_dlhandle is 0x3879d80
+00000000000i[PLGIN] loaded plugin libbx_pit.so
+00000000000i[     ] lt_dlhandle is 0x387a7b0
+00000000000i[PLGIN] loaded plugin libbx_floppy.so
+00000000000i[     ] lt_dlhandle is 0x387b3a0
+00000000000i[PLGIN] loaded plugin libbx_vga.so
+00000000000i[     ] lt_dlhandle is 0x387bb30
+00000000000i[PLGIN] loaded plugin libbx_ioapic.so
+00000000000i[     ] lt_dlhandle is 0x387c570
+00000000000i[PLGIN] loaded plugin libbx_keyboard.so
+00000000000i[     ] lt_dlhandle is 0x387ce10
+00000000000i[PLGIN] loaded plugin libbx_harddrv.so
+00000000000i[     ] lt_dlhandle is 0x388ef00
+00000000000i[PLGIN] loaded plugin libbx_pci_ide.so
+00000000000i[PLGIN] init_dev of 'pci' plugin device by virtual method
+00000000000i[PCI  ] 440FX Host bridge present at device 0, function 0
+00000000000i[PLGIN] init_dev of 'pci2isa' plugin device by virtual method
+00000000000i[PCI  ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
+00000000000i[PLGIN] init_dev of 'cmos' plugin device by virtual method
+00000000000i[CMOS ] Using local time for initial clock
+00000000000i[CMOS ] Setting initial clock to: Thu Sep 12 11:59:14 2019 (time0=1568260754)
+00000000000i[PLGIN] init_dev of 'dma' plugin device by virtual method
+00000000000i[DMA  ] channel 4 used by cascade
+00000000000i[PLGIN] init_dev of 'pic' plugin device by virtual method
+00000000000i[PLGIN] init_dev of 'pit' plugin device by virtual method
+00000000000i[PLGIN] init_dev of 'floppy' plugin device by virtual method
+00000000000i[DMA  ] channel 2 used by Floppy Drive
+00000000000i[FDD  ] tried to open '/dev/fd0' read/write: No such file or directory
+00000000000i[FDD  ] tried to open '/dev/fd0' read only: No such file or directory
+00000000000i[PLGIN] init_dev of 'vga' plugin device by virtual method
+00000000000i[MEM0 ] Register memory access handlers: 0x00000000000a0000 - 0x00000000000bffff
+00000000000i[VGA  ] interval=200000
+00000000000i[MEM0 ] Register memory access handlers: 0x00000000e0000000 - 0x00000000e0ffffff
+00000000000i[BXVGA] VBE Bochs Display Extension Enabled
+00000000000i[XGUI ] test_alloc_colors: 16 colors available out of 16 colors tried
+00000000000i[XGUI ] font 8 wide x 16 high, display depth = 24
+00000000000i[MEM0 ] rom at 0xc0000/41472 ('/usr/share/bochs/VGABIOS-lgpl-latest')
+00000000000i[PLGIN] init_dev of 'acpi' plugin device by virtual method
+00000000000i[PCI  ] ACPI Controller present at device 1, function 3
+00000000000i[PLGIN] init_dev of 'ioapic' plugin device by virtual method
+00000000000i[IOAP ] initializing I/O APIC
+00000000000i[MEM0 ] Register memory access handlers: 0x00000000fec00000 - 0x00000000fec00fff
+00000000000i[PLGIN] init_dev of 'keyboard' plugin device by virtual method
+00000000000i[KBD  ] will paste characters every 1000 keyboard ticks
+00000000000i[PLGIN] init_dev of 'harddrv' plugin device by virtual method
+00000000000i[HD   ] HD on ata0-0: 'os.img', 'flat' mode
+00000000000i[IMG  ] hd_size: 62447616
+00000000000i[HD   ] ata0-0: using specified geometry: CHS=121/16/63
+00000000000i[HD   ] translation on ata0-0 set to 'none'
+00000000000i[HD   ] Using boot sequence disk, none, none
+00000000000i[HD   ] Floppy boot signature check is enabled
+00000000000i[PLGIN] init_dev of 'pci_ide' plugin device by virtual method
+00000000000i[PCI  ] PIIX3 PCI IDE controller present at device 1, function 1
+00000000000i[PLGIN] init_dev of 'unmapped' plugin device by virtual method
+00000000000i[PLGIN] init_dev of 'biosdev' plugin device by virtual method
+00000000000i[PLGIN] init_dev of 'speaker' plugin device by virtual method
+00000000000i[PLGIN] init_dev of 'extfpuirq' plugin device by virtual method
+00000000000i[PLGIN] init_dev of 'parallel' plugin device by virtual method
+00000000000i[PAR  ] parallel port 1 at 0x0378 irq 7
+00000000000i[PLGIN] init_dev of 'serial' plugin device by virtual method
+00000000000i[SER  ] com1 at 0x03f8 irq 4
+00000000000i[PLGIN] init_dev of 'gameport' plugin device by virtual method
+00000000000i[PLGIN] init_dev of 'iodebug' plugin device by virtual method
+00000000000i[PLGIN] register state of 'pci' plugin device by virtual method
+00000000000i[PLGIN] register state of 'pci2isa' plugin device by virtual method
+00000000000i[PLGIN] register state of 'cmos' plugin device by virtual method
+00000000000i[PLGIN] register state of 'dma' plugin device by virtual method
+00000000000i[PLGIN] register state of 'pic' plugin device by virtual method
+00000000000i[PLGIN] register state of 'pit' plugin device by virtual method
+00000000000i[PLGIN] register state of 'floppy' plugin device by virtual method
+00000000000i[PLGIN] register state of 'vga' plugin device by virtual method
+00000000000i[PLGIN] register state of 'unmapped' plugin device by virtual method
+00000000000i[PLGIN] register state of 'biosdev' plugin device by virtual method
+00000000000i[PLGIN] register state of 'speaker' plugin device by virtual method
+00000000000i[PLGIN] register state of 'extfpuirq' plugin device by virtual method
+00000000000i[PLGIN] register state of 'parallel' plugin device by virtual method
+00000000000i[PLGIN] register state of 'serial' plugin device by virtual method
+00000000000i[PLGIN] register state of 'gameport' plugin device by virtual method
+00000000000i[PLGIN] register state of 'iodebug' plugin device by virtual method
+00000000000i[PLGIN] register state of 'acpi' plugin device by virtual method
+00000000000i[PLGIN] register state of 'ioapic' plugin device by virtual method
+00000000000i[PLGIN] register state of 'keyboard' plugin device by virtual method
+00000000000i[PLGIN] register state of 'harddrv' plugin device by virtual method
+00000000000i[PLGIN] register state of 'pci_ide' plugin device by virtual method
+00000000000i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00000000000i[CPU0 ] cpu hardware reset
+00000000000i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00000000000i[CPU0 ] CPUID[0x00000000]: 00000002 756e6547 6c65746e 49656e69
+00000000000i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00002028 1fcbfbff
+00000000000i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00000000000i[CPU0 ] CPUID[0x80000000]: 80000008 00000000 00000000 00000000
+00000000000i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000101 2a100000
+00000000000i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00000000000i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00000000000i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00000000000i[CPU0 ] CPUID[0x80000005]: 01ff01ff 01ff01ff 40020140 40020140
+00000000000i[CPU0 ] CPUID[0x80000006]: 00000000 42004200 02008140 00000000
+00000000000i[CPU0 ] CPUID[0x80000007]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0 ] CPUID[0x80000008]: 00003028 00000000 00000000 00000000
+00000000000i[PLGIN] reset of 'pci' plugin device by virtual method
+00000000000i[PLGIN] reset of 'pci2isa' plugin device by virtual method
+00000000000i[PLGIN] reset of 'cmos' plugin device by virtual method
+00000000000i[PLGIN] reset of 'dma' plugin device by virtual method
+00000000000i[PLGIN] reset of 'pic' plugin device by virtual method
+00000000000i[PLGIN] reset of 'pit' plugin device by virtual method
+00000000000i[PLGIN] reset of 'floppy' plugin device by virtual method
+00000000000i[PLGIN] reset of 'vga' plugin device by virtual method
+00000000000i[PLGIN] reset of 'acpi' plugin device by virtual method
+00000000000i[PLGIN] reset of 'ioapic' plugin device by virtual method
+00000000000i[PLGIN] reset of 'keyboard' plugin device by virtual method
+00000000000i[PLGIN] reset of 'harddrv' plugin device by virtual method
+00000000000i[PLGIN] reset of 'pci_ide' plugin device by virtual method
+00000000000i[PLGIN] reset of 'unmapped' plugin device by virtual method
+00000000000i[PLGIN] reset of 'biosdev' plugin device by virtual method
+00000000000i[PLGIN] reset of 'speaker' plugin device by virtual method
+00000000000i[SPEAK] Using /dev/console for output
+00000000000i[PLGIN] reset of 'extfpuirq' plugin device by virtual method
+00000000000i[PLGIN] reset of 'parallel' plugin device by virtual method
+00000000000i[PLGIN] reset of 'serial' plugin device by virtual method
+00000000000i[PLGIN] reset of 'gameport' plugin device by virtual method
+00000000000i[PLGIN] reset of 'iodebug' plugin device by virtual method
+00000000000i[XGUI ] Mouse capture off
+00000000000i[     ] set SIGINT handler to bx_debug_ctrlc_handler
+00000000000i[XGUI ] Mouse capture off
+00000000025i[MEM0 ] allocate_block: block=0x0 used 0x1 of 0x20
+00000004661i[BIOS ] $Revision: 11318 $ $Date: 2012-08-06 19:59:54 +0200 (Mo, 06. Aug 2012) $
+00000337542i[KBD  ] reset-disable command received
+00000363294i[BIOS ] Starting rombios32
+00000363736i[BIOS ] Shutdown flag 0
+00000364333i[BIOS ] ram_size=0x02000000
+00000364761i[BIOS ] ram_end=32MB
+00000860699i[BIOS ] Found 1 cpu(s)
+00000874880i[BIOS ] bios_table_addr: 0x000fa438 end=0x000fcc00
+00000874913d[PCI  ] 440FX PMC register 0x00 selected
+00000874915d[PCI  ] 440FX PMC read  register 0x00 value 0x00008086
+00000874919d[PCI  ] 440FX PMC register 0x00 selected
+00000874921d[PCI  ] 440FX PMC read  register 0x02 value 0x00001237
+00000874944d[PCI  ] 440FX PMC register 0x00 selected
+00000874946d[PCI  ] 440FX PMC read  register 0x00 value 0x00008086
+00000874950d[PCI  ] 440FX PMC register 0x00 selected
+00000874952d[PCI  ] 440FX PMC read  register 0x02 value 0x00001237
+00000874968d[PCI  ] 440FX PMC register 0x58 selected
+00000874971d[PCI  ] 440FX PMC read  register 0x59 value 0x00000000
+00000874976d[PCI  ] 440FX PMC register 0x58 selected
+00001202670d[PCI  ] 440FX PMC register 0x58 selected
+00001202675i[PCI  ] 440FX PMC write to PAM register 59 (TLB Flush)
+00001530379d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x01
+00001530385d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x01
+00001530402d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x02
+00001530408d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x02
+00001530425d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x03
+00001530431d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x03
+00001530448d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x04
+00001530454d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x04
+00001530471d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x05
+00001530477d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x05
+00001530494d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x06
+00001530500d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x06
+00001530517d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x07
+00001530523d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x07
+00001530540d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001530546d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001530571d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001530577d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001530602d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001530607i[P2I  ] PCI IRQ routing: PIRQA# set to 0x0b
+00001530626d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001530631i[P2I  ] PCI IRQ routing: PIRQB# set to 0x09
+00001530650d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001530655i[P2I  ] PCI IRQ routing: PIRQC# set to 0x0b
+00001530674d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001530679i[P2I  ] PCI IRQ routing: PIRQD# set to 0x09
+00001530689i[P2I  ] write: ELCR2 = 0x0a
+00001531468i[BIOS ] PIIX3/PIIX4 init: elcr=00 0a
+00001531492d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001531498d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001531523d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001531529d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001531556d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x02
+00001531562d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x02
+00001531579d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001531585d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001531610d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001531616d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001531643d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x04
+00001531649d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x04
+00001531666d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x05
+00001531672d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x05
+00001531689d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x06
+00001531695d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x06
+00001531712d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x07
+00001531718d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x07
+00001531735d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x00
+00001531741d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x00
+00001531758d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x01
+00001531764d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x01
+00001531781d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x02
+00001531787d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x02
+00001531804d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x03
+00001531810d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x03
+00001531827d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x04
+00001531833d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x04
+00001531850d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x05
+00001531856d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x05
+00001531873d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x06
+00001531879d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x06
+00001531896d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x07
+00001531902d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x07
+00001531919d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x00
+00001531925d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x00
+00001531942d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x01
+00001531948d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x01
+00001531965d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x02
+00001531971d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x02
+00001531988d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x03
+00001531994d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x03
+00001532011d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x04
+00001532017d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x04
+00001532034d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x05
+00001532040d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x05
+00001532057d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x06
+00001532063d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x06
+00001532080d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x07
+00001532086d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x07
+00001532103d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x00
+00001532109d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x00
+00001532126d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x01
+00001532132d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x01
+00001532149d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x02
+00001532155d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x02
+00001532172d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x03
+00001532178d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x03
+00001532195d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x04
+00001532201d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x04
+00001532218d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x05
+00001532224d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x05
+00001532241d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x06
+00001532247d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x06
+00001532264d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x07
+00001532270d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x07
+00001532287d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x00
+00001532293d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x00
+00001532310d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x01
+00001532316d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x01
+00001532333d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x02
+00001532339d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x02
+00001532356d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x03
+00001532362d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x03
+00001532379d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x04
+00001532385d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x04
+00001532402d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x05
+00001532408d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x05
+00001532425d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x06
+00001532431d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x06
+00001532448d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x07
+00001532454d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x07
+00001532471d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x00
+00001532477d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x00
+00001532494d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x01
+00001532500d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x01
+00001532517d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x02
+00001532523d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x02
+00001532540d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x03
+00001532546d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x03
+00001532563d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x04
+00001532569d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x04
+00001532586d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x05
+00001532592d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x05
+00001532609d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x06
+00001532615d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x06
+00001532632d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x07
+00001532638d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x07
+00001532655d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x00
+00001532661d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x00
+00001532678d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x01
+00001532684d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x01
+00001532701d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x02
+00001532707d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x02
+00001532724d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x03
+00001532730d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x03
+00001532747d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x04
+00001532753d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x04
+00001532770d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x05
+00001532776d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x05
+00001532793d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x06
+00001532799d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x06
+00001532816d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x07
+00001532822d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x07
+00001532839d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x00
+00001532845d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x00
+00001532862d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x01
+00001532868d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x01
+00001532885d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x02
+00001532891d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x02
+00001532908d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x03
+00001532914d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x03
+00001532931d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x04
+00001532937d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x04
+00001532954d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x05
+00001532960d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x05
+00001532977d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x06
+00001532983d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x06
+00001533000d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x07
+00001533006d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x07
+00001533023d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x00
+00001533029d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x00
+00001533046d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x01
+00001533052d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x01
+00001533069d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x02
+00001533075d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x02
+00001533092d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x03
+00001533098d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x03
+00001533115d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x04
+00001533121d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x04
+00001533138d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x05
+00001533144d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x05
+00001533161d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x06
+00001533167d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x06
+00001533184d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x07
+00001533190d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x07
+00001533207d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x00
+00001533213d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x00
+00001533230d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x01
+00001533236d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x01
+00001533253d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x02
+00001533259d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x02
+00001533276d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x03
+00001533282d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x03
+00001533299d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x04
+00001533305d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x04
+00001533322d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x05
+00001533328d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x05
+00001533345d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x06
+00001533351d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x06
+00001533368d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x07
+00001533374d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x07
+00001533391d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x00
+00001533397d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x00
+00001533414d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x01
+00001533420d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x01
+00001533437d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x02
+00001533443d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x02
+00001533460d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x03
+00001533466d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x03
+00001533483d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x04
+00001533489d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x04
+00001533506d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x05
+00001533512d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x05
+00001533529d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x06
+00001533535d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x06
+00001533552d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x07
+00001533558d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x07
+00001533575d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x00
+00001533581d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x00
+00001533598d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x01
+00001533604d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x01
+00001533621d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x02
+00001533627d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x02
+00001533644d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x03
+00001533650d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x03
+00001533667d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x04
+00001533673d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x04
+00001533690d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x05
+00001533696d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x05
+00001533713d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x06
+00001533719d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x06
+00001533736d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x07
+00001533742d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x07
+00001533759d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x00
+00001533765d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x00
+00001533782d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x01
+00001533788d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x01
+00001533805d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x02
+00001533811d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x02
+00001533828d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x03
+00001533834d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x03
+00001533851d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x04
+00001533857d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x04
+00001533874d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x05
+00001533880d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x05
+00001533897d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x06
+00001533903d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x06
+00001533920d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x07
+00001533926d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x07
+00001533943d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x00
+00001533949d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x00
+00001533966d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x01
+00001533972d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x01
+00001533989d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x02
+00001533995d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x02
+00001534012d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x03
+00001534018d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x03
+00001534035d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x04
+00001534041d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x04
+00001534058d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x05
+00001534064d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x05
+00001534081d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x06
+00001534087d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x06
+00001534104d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x07
+00001534110d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x07
+00001534127d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x00
+00001534133d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x00
+00001534150d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x01
+00001534156d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x01
+00001534173d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x02
+00001534179d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x02
+00001534196d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x03
+00001534202d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x03
+00001534219d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x04
+00001534225d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x04
+00001534242d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x05
+00001534248d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x05
+00001534265d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x06
+00001534271d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x06
+00001534288d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x07
+00001534294d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x07
+00001534311d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x00
+00001534317d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x00
+00001534334d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x01
+00001534340d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x01
+00001534357d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x02
+00001534363d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x02
+00001534380d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x03
+00001534386d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x03
+00001534403d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x04
+00001534409d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x04
+00001534426d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x05
+00001534432d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x05
+00001534449d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x06
+00001534455d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x06
+00001534472d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x07
+00001534478d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x07
+00001534495d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x00
+00001534501d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x00
+00001534518d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x01
+00001534524d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x01
+00001534541d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x02
+00001534547d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x02
+00001534564d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x03
+00001534570d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x03
+00001534587d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x04
+00001534593d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x04
+00001534610d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x05
+00001534616d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x05
+00001534633d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x06
+00001534639d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x06
+00001534656d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x07
+00001534662d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x07
+00001534679d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x00
+00001534685d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x00
+00001534702d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x01
+00001534708d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x01
+00001534725d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x02
+00001534731d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x02
+00001534748d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x03
+00001534754d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x03
+00001534771d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x04
+00001534777d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x04
+00001534794d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x05
+00001534800d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x05
+00001534817d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x06
+00001534823d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x06
+00001534840d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x07
+00001534846d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x07
+00001534863d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x00
+00001534869d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x00
+00001534886d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x01
+00001534892d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x01
+00001534909d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x02
+00001534915d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x02
+00001534932d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x03
+00001534938d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x03
+00001534955d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x04
+00001534961d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x04
+00001534978d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x05
+00001534984d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x05
+00001535001d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x06
+00001535007d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x06
+00001535024d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x07
+00001535030d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x07
+00001535047d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x00
+00001535053d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x00
+00001535070d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x01
+00001535076d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x01
+00001535093d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x02
+00001535099d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x02
+00001535116d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x03
+00001535122d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x03
+00001535139d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x04
+00001535145d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x04
+00001535162d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x05
+00001535168d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x05
+00001535185d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x06
+00001535191d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x06
+00001535208d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x07
+00001535214d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x07
+00001535231d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x00
+00001535237d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x00
+00001535254d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x01
+00001535260d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x01
+00001535277d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x02
+00001535283d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x02
+00001535300d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x03
+00001535306d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x03
+00001535323d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x04
+00001535329d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x04
+00001535346d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x05
+00001535352d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x05
+00001535369d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x06
+00001535375d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x06
+00001535392d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x07
+00001535398d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x07
+00001535415d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x00
+00001535421d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x00
+00001535438d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x01
+00001535444d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x01
+00001535461d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x02
+00001535467d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x02
+00001535484d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x03
+00001535490d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x03
+00001535507d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x04
+00001535513d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x04
+00001535530d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x05
+00001535536d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x05
+00001535553d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x06
+00001535559d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x06
+00001535576d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x07
+00001535582d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x07
+00001535599d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x00
+00001535605d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x00
+00001535622d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x01
+00001535628d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x01
+00001535645d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x02
+00001535651d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x02
+00001535668d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x03
+00001535674d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x03
+00001535691d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x04
+00001535697d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x04
+00001535714d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x05
+00001535720d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x05
+00001535737d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x06
+00001535743d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x06
+00001535760d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x07
+00001535766d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x07
+00001535783d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x00
+00001535789d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x00
+00001535806d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x01
+00001535812d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x01
+00001535829d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x02
+00001535835d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x02
+00001535852d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x03
+00001535858d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x03
+00001535875d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x04
+00001535881d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x04
+00001535898d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x05
+00001535904d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x05
+00001535921d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x06
+00001535927d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x06
+00001535944d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x07
+00001535950d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x07
+00001535967d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x00
+00001535973d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x00
+00001535990d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x01
+00001535996d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x01
+00001536013d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x02
+00001536019d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x02
+00001536036d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x03
+00001536042d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x03
+00001536059d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x04
+00001536065d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x04
+00001536082d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x05
+00001536088d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x05
+00001536105d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x06
+00001536111d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x06
+00001536128d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x07
+00001536134d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x07
+00001536151d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x00
+00001536157d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x00
+00001536174d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x01
+00001536180d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x01
+00001536197d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x02
+00001536203d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x02
+00001536220d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x03
+00001536226d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x03
+00001536243d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x04
+00001536249d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x04
+00001536266d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x05
+00001536272d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x05
+00001536289d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x06
+00001536295d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x06
+00001536312d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x07
+00001536318d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x07
+00001536335d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x00
+00001536341d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x00
+00001536358d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x01
+00001536364d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x01
+00001536381d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x02
+00001536387d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x02
+00001536404d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x03
+00001536410d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x03
+00001536427d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x04
+00001536433d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x04
+00001536450d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x05
+00001536456d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x05
+00001536473d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x06
+00001536479d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x06
+00001536496d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x07
+00001536502d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x07
+00001536519d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x00
+00001536525d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x00
+00001536542d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x01
+00001536548d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x01
+00001536565d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x02
+00001536571d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x02
+00001536588d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x03
+00001536594d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x03
+00001536611d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x04
+00001536617d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x04
+00001536634d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x05
+00001536640d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x05
+00001536657d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x06
+00001536663d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x06
+00001536680d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x07
+00001536686d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x07
+00001536703d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x00
+00001536709d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x00
+00001536726d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x01
+00001536732d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x01
+00001536749d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x02
+00001536755d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x02
+00001536772d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x03
+00001536778d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x03
+00001536795d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x04
+00001536801d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x04
+00001536818d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x05
+00001536824d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x05
+00001536841d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x06
+00001536847d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x06
+00001536864d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x07
+00001536870d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x07
+00001536887d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x00
+00001536893d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x00
+00001536910d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x01
+00001536916d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x01
+00001536933d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x02
+00001536939d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x02
+00001536956d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x03
+00001536962d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x03
+00001536979d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x04
+00001536985d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x04
+00001537002d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x05
+00001537008d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x05
+00001537025d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x06
+00001537031d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x06
+00001537048d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x07
+00001537054d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x07
+00001537071d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x00
+00001537077d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x00
+00001537094d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x01
+00001537100d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x01
+00001537117d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x02
+00001537123d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x02
+00001537140d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x03
+00001537146d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x03
+00001537163d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x04
+00001537169d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x04
+00001537186d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x05
+00001537192d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x05
+00001537209d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x06
+00001537215d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x06
+00001537232d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x07
+00001537238d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x07
+00001537272d[PCI  ] 440FX PMC register 0x00 selected
+00001537274d[PCI  ] 440FX PMC read  register 0x00 value 0x00008086
+00001537278d[PCI  ] 440FX PMC register 0x00 selected
+00001537280d[PCI  ] 440FX PMC read  register 0x02 value 0x00001237
+00001537303d[PCI  ] 440FX PMC register 0x08 selected
+00001537306d[PCI  ] 440FX PMC read  register 0x0a value 0x00000600
+00001537311d[PCI  ] 440FX PMC register 0x00 selected
+00001537313d[PCI  ] 440FX PMC read  register 0x00 value 0x00008086
+00001537318d[PCI  ] 440FX PMC register 0x00 selected
+00001537320d[PCI  ] 440FX PMC read  register 0x02 value 0x00001237
+00001539148i[BIOS ] PCI: bus=0 devfn=0x00: vendor_id=0x8086 device_id=0x1237 class=0x0600
+00001539181d[PCI  ] 440FX PMC register 0x10 selected
+00001539187d[PCI  ] 440FX PMC register 0x10 selected
+00001539189d[PCI  ] 440FX PMC read  register 0x10 value 0x00000000
+00001539209d[PCI  ] 440FX PMC register 0x14 selected
+00001539215d[PCI  ] 440FX PMC register 0x14 selected
+00001539217d[PCI  ] 440FX PMC read  register 0x14 value 0x00000000
+00001539237d[PCI  ] 440FX PMC register 0x18 selected
+00001539243d[PCI  ] 440FX PMC register 0x18 selected
+00001539245d[PCI  ] 440FX PMC read  register 0x18 value 0x00000000
+00001539265d[PCI  ] 440FX PMC register 0x1c selected
+00001539271d[PCI  ] 440FX PMC register 0x1c selected
+00001539273d[PCI  ] 440FX PMC read  register 0x1c value 0x00000000
+00001539293d[PCI  ] 440FX PMC register 0x20 selected
+00001539299d[PCI  ] 440FX PMC register 0x20 selected
+00001539301d[PCI  ] 440FX PMC read  register 0x20 value 0x00000000
+00001539321d[PCI  ] 440FX PMC register 0x24 selected
+00001539327d[PCI  ] 440FX PMC register 0x24 selected
+00001539329d[PCI  ] 440FX PMC read  register 0x24 value 0x00000000
+00001539346d[PCI  ] 440FX PMC register 0x30 selected
+00001539353d[PCI  ] 440FX PMC register 0x30 selected
+00001539355d[PCI  ] 440FX PMC read  register 0x30 value 0x00000000
+00001539364d[PCI  ] 440FX PMC register 0x3c selected
+00001539366d[PCI  ] 440FX PMC read  register 0x3d value 0x00000000
+00001539390d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x01
+00001539396d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x01
+00001539413d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x02
+00001539419d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x02
+00001539436d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x03
+00001539442d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x03
+00001539459d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x04
+00001539465d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x04
+00001539482d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x05
+00001539488d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x05
+00001539505d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x06
+00001539511d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x06
+00001539528d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x07
+00001539534d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x07
+00001539551d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001539557d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001539582d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001539590d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001539597d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001541427i[BIOS ] PCI: bus=0 devfn=0x08: vendor_id=0x8086 device_id=0x7000 class=0x0601
+00001541460d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001541466d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001541488d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001541494d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001541516d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001541522d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001541544d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001541550d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001541572d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001541578d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001541600d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001541606d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001541625d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001541632d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001541643d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001541669d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001541675d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001541700d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001541708d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001541715d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001543545i[BIOS ] PCI: bus=0 devfn=0x09: vendor_id=0x8086 device_id=0x7010 class=0x0101
+00001543576d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001543583d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001543604d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001543610d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001543632d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001543638d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001543660d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001543666d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001543688d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001543694d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001543716d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001543722d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001543764d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001543771d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001543774i[PIDE ] new BM-DMA address: 0xc000
+00001544394i[BIOS ] region 4: 0x0000c000
+00001544409d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001544422d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001544460d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001544466d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001544485d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001544492d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001544503d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001544529d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x02
+00001544535d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x02
+00001544552d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001544558d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001544583d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001544591d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001544598d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546428i[BIOS ] PCI: bus=0 devfn=0x0b: vendor_id=0x8086 device_id=0x7113 class=0x0680
+00001546461d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546467d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546489d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546495d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546517d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546523d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546545d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546551d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546573d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546579d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546601d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546607d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546626d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546633d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546644d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546652d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546658i[ACPI ] new irq line = 11
+00001546668d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546672i[ACPI ] new irq line = 9
+00001546675d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546695d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546699i[ACPI ] new PM base address: 0xb000
+00001546703d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546710d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546713i[ACPI ] new SM base address: 0xb100
+00001546717d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546724d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001546738d[PCI  ] 440FX PMC register 0x70 selected
+00001546741i[PCI  ] setting SMRAM control register to 0x4a
+00001710824d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001710835i[CPU0 ] Enter to System Management Mode
+00001710835i[CPU0 ] enter_system_management_mode: temporary disable VMX while in SMM mode
+00001710845i[CPU0 ] RSM: Resuming from System Management Mode
+00001874863d[PCI  ] 440FX PMC register 0x70 selected
+00001874866i[PCI  ] setting SMRAM control register to 0x0a
+00001874888d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x04
+00001874894d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x04
+00001874911d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x05
+00001874917d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x05
+00001874934d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x06
+00001874940d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x06
+00001874957d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x07
+00001874963d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x07
+00001874980d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x00
+00001874986d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x00
+00001875003d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x01
+00001875009d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x01
+00001875026d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x02
+00001875032d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x02
+00001875049d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x03
+00001875055d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x03
+00001875072d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x04
+00001875078d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x04
+00001875095d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x05
+00001875101d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x05
+00001875118d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x06
+00001875124d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x06
+00001875141d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x07
+00001875147d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x07
+00001875164d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x00
+00001875170d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x00
+00001875187d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x01
+00001875193d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x01
+00001875210d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x02
+00001875216d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x02
+00001875233d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x03
+00001875239d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x03
+00001875256d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x04
+00001875262d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x04
+00001875279d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x05
+00001875285d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x05
+00001875302d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x06
+00001875308d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x06
+00001875325d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x07
+00001875331d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x07
+00001875348d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x00
+00001875354d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x00
+00001875371d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x01
+00001875377d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x01
+00001875394d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x02
+00001875400d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x02
+00001875417d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x03
+00001875423d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x03
+00001875440d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x04
+00001875446d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x04
+00001875463d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x05
+00001875469d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x05
+00001875486d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x06
+00001875492d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x06
+00001875509d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x07
+00001875515d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x07
+00001875532d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x00
+00001875538d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x00
+00001875555d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x01
+00001875561d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x01
+00001875578d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x02
+00001875584d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x02
+00001875601d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x03
+00001875607d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x03
+00001875624d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x04
+00001875630d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x04
+00001875647d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x05
+00001875653d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x05
+00001875670d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x06
+00001875676d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x06
+00001875693d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x07
+00001875699d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x07
+00001875716d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x00
+00001875722d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x00
+00001875739d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x01
+00001875745d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x01
+00001875762d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x02
+00001875768d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x02
+00001875785d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x03
+00001875791d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x03
+00001875808d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x04
+00001875814d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x04
+00001875831d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x05
+00001875837d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x05
+00001875854d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x06
+00001875860d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x06
+00001875877d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x07
+00001875883d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x07
+00001875900d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x00
+00001875906d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x00
+00001875923d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x01
+00001875929d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x01
+00001875946d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x02
+00001875952d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x02
+00001875969d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x03
+00001875975d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x03
+00001875992d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x04
+00001875998d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x04
+00001876015d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x05
+00001876021d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x05
+00001876038d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x06
+00001876044d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x06
+00001876061d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x07
+00001876067d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x07
+00001876084d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x00
+00001876090d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x00
+00001876107d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x01
+00001876113d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x01
+00001876130d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x02
+00001876136d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x02
+00001876153d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x03
+00001876159d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x03
+00001876176d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x04
+00001876182d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x04
+00001876199d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x05
+00001876205d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x05
+00001876222d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x06
+00001876228d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x06
+00001876245d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x07
+00001876251d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x07
+00001876268d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x00
+00001876274d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x00
+00001876291d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x01
+00001876297d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x01
+00001876314d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x02
+00001876320d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x02
+00001876337d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x03
+00001876343d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x03
+00001876360d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x04
+00001876366d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x04
+00001876383d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x05
+00001876389d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x05
+00001876406d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x06
+00001876412d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x06
+00001876429d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x07
+00001876435d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x07
+00001876452d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x00
+00001876458d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x00
+00001876475d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x01
+00001876481d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x01
+00001876498d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x02
+00001876504d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x02
+00001876521d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x03
+00001876527d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x03
+00001876544d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x04
+00001876550d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x04
+00001876567d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x05
+00001876573d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x05
+00001876590d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x06
+00001876596d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x06
+00001876613d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x07
+00001876619d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x07
+00001876636d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x00
+00001876642d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x00
+00001876659d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x01
+00001876665d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x01
+00001876682d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x02
+00001876688d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x02
+00001876705d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x03
+00001876711d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x03
+00001876728d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x04
+00001876734d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x04
+00001876751d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x05
+00001876757d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x05
+00001876774d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x06
+00001876780d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x06
+00001876797d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x07
+00001876803d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x07
+00001876820d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x00
+00001876826d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x00
+00001876843d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x01
+00001876849d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x01
+00001876866d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x02
+00001876872d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x02
+00001876889d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x03
+00001876895d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x03
+00001876912d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x04
+00001876918d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x04
+00001876935d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x05
+00001876941d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x05
+00001876958d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x06
+00001876964d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x06
+00001876981d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x07
+00001876987d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x07
+00001877004d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x00
+00001877010d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x00
+00001877027d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x01
+00001877033d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x01
+00001877050d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x02
+00001877056d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x02
+00001877073d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x03
+00001877079d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x03
+00001877096d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x04
+00001877102d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x04
+00001877119d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x05
+00001877125d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x05
+00001877142d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x06
+00001877148d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x06
+00001877165d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x07
+00001877171d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x07
+00001877188d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x00
+00001877194d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x00
+00001877211d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x01
+00001877217d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x01
+00001877234d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x02
+00001877240d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x02
+00001877257d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x03
+00001877263d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x03
+00001877280d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x04
+00001877286d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x04
+00001877303d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x05
+00001877309d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x05
+00001877326d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x06
+00001877332d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x06
+00001877349d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x07
+00001877355d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x07
+00001877372d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x00
+00001877378d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x00
+00001877395d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x01
+00001877401d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x01
+00001877418d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x02
+00001877424d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x02
+00001877441d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x03
+00001877447d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x03
+00001877464d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x04
+00001877470d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x04
+00001877487d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x05
+00001877493d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x05
+00001877510d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x06
+00001877516d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x06
+00001877533d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x07
+00001877539d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x07
+00001877556d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x00
+00001877562d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x00
+00001877579d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x01
+00001877585d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x01
+00001877602d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x02
+00001877608d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x02
+00001877625d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x03
+00001877631d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x03
+00001877648d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x04
+00001877654d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x04
+00001877671d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x05
+00001877677d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x05
+00001877694d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x06
+00001877700d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x06
+00001877717d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x07
+00001877723d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x07
+00001877740d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x00
+00001877746d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x00
+00001877763d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x01
+00001877769d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x01
+00001877786d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x02
+00001877792d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x02
+00001877809d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x03
+00001877815d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x03
+00001877832d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x04
+00001877838d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x04
+00001877855d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x05
+00001877861d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x05
+00001877878d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x06
+00001877884d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x06
+00001877901d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x07
+00001877907d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x07
+00001877924d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x00
+00001877930d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x00
+00001877947d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x01
+00001877953d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x01
+00001877970d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x02
+00001877976d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x02
+00001877993d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x03
+00001877999d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x03
+00001878016d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x04
+00001878022d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x04
+00001878039d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x05
+00001878045d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x05
+00001878062d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x06
+00001878068d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x06
+00001878085d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x07
+00001878091d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x07
+00001878108d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x00
+00001878114d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x00
+00001878131d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x01
+00001878137d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x01
+00001878154d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x02
+00001878160d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x02
+00001878177d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x03
+00001878183d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x03
+00001878200d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x04
+00001878206d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x04
+00001878223d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x05
+00001878229d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x05
+00001878246d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x06
+00001878252d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x06
+00001878269d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x07
+00001878275d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x07
+00001878292d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x00
+00001878298d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x00
+00001878315d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x01
+00001878321d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x01
+00001878338d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x02
+00001878344d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x02
+00001878361d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x03
+00001878367d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x03
+00001878384d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x04
+00001878390d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x04
+00001878407d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x05
+00001878413d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x05
+00001878430d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x06
+00001878436d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x06
+00001878453d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x07
+00001878459d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x07
+00001878476d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x00
+00001878482d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x00
+00001878499d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x01
+00001878505d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x01
+00001878522d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x02
+00001878528d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x02
+00001878545d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x03
+00001878551d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x03
+00001878568d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x04
+00001878574d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x04
+00001878591d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x05
+00001878597d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x05
+00001878614d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x06
+00001878620d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x06
+00001878637d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x07
+00001878643d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x07
+00001878660d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x00
+00001878666d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x00
+00001878683d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x01
+00001878689d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x01
+00001878706d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x02
+00001878712d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x02
+00001878729d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x03
+00001878735d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x03
+00001878752d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x04
+00001878758d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x04
+00001878775d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x05
+00001878781d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x05
+00001878798d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x06
+00001878804d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x06
+00001878821d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x07
+00001878827d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x07
+00001878844d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x00
+00001878850d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x00
+00001878867d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x01
+00001878873d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x01
+00001878890d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x02
+00001878896d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x02
+00001878913d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x03
+00001878919d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x03
+00001878936d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x04
+00001878942d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x04
+00001878959d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x05
+00001878965d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x05
+00001878982d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x06
+00001878988d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x06
+00001879005d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x07
+00001879011d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x07
+00001879028d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x00
+00001879034d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x00
+00001879051d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x01
+00001879057d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x01
+00001879074d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x02
+00001879080d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x02
+00001879097d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x03
+00001879103d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x03
+00001879120d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x04
+00001879126d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x04
+00001879143d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x05
+00001879149d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x05
+00001879166d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x06
+00001879172d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x06
+00001879189d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x07
+00001879195d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x07
+00001879212d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x00
+00001879218d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x00
+00001879235d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x01
+00001879241d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x01
+00001879258d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x02
+00001879264d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x02
+00001879281d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x03
+00001879287d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x03
+00001879304d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x04
+00001879310d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x04
+00001879327d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x05
+00001879333d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x05
+00001879350d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x06
+00001879356d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x06
+00001879373d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x07
+00001879379d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x07
+00001879396d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x00
+00001879402d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x00
+00001879419d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x01
+00001879425d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x01
+00001879442d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x02
+00001879448d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x02
+00001879465d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x03
+00001879471d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x03
+00001879488d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x04
+00001879494d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x04
+00001879511d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x05
+00001879517d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x05
+00001879534d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x06
+00001879540d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x06
+00001879557d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x07
+00001879563d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x07
+00001879580d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x00
+00001879586d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x00
+00001879603d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x01
+00001879609d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x01
+00001879626d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x02
+00001879632d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x02
+00001879649d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x03
+00001879655d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x03
+00001879672d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x04
+00001879678d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x04
+00001879695d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x05
+00001879701d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x05
+00001879718d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x06
+00001879724d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x06
+00001879741d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x07
+00001879747d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x07
+00001879764d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x00
+00001879770d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x00
+00001879787d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x01
+00001879793d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x01
+00001879810d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x02
+00001879816d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x02
+00001879833d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x03
+00001879839d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x03
+00001879856d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x04
+00001879862d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x04
+00001879879d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x05
+00001879885d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x05
+00001879902d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x06
+00001879908d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x06
+00001879925d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x07
+00001879931d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x07
+00001879948d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x00
+00001879954d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x00
+00001879971d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x01
+00001879977d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x01
+00001879994d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x02
+00001880000d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x02
+00001880017d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x03
+00001880023d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x03
+00001880040d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x04
+00001880046d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x04
+00001880063d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x05
+00001880069d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x05
+00001880086d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x06
+00001880092d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x06
+00001880109d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x07
+00001880115d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x07
+00001880132d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x00
+00001880138d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x00
+00001880155d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x01
+00001880161d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x01
+00001880178d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x02
+00001880184d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x02
+00001880201d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x03
+00001880207d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x03
+00001880224d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x04
+00001880230d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x04
+00001880247d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x05
+00001880253d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x05
+00001880270d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x06
+00001880276d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x06
+00001880293d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x07
+00001880299d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x07
+00001880316d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x00
+00001880322d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x00
+00001880339d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x01
+00001880345d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x01
+00001880362d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x02
+00001880368d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x02
+00001880385d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x03
+00001880391d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x03
+00001880408d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x04
+00001880414d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x04
+00001880431d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x05
+00001880437d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x05
+00001880454d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x06
+00001880460d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x06
+00001880477d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x07
+00001880483d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x07
+00001880517d[PCI  ] 440FX PMC register 0x00 selected
+00001880519d[PCI  ] 440FX PMC read  register 0x00 value 0x00008086
+00001880523d[PCI  ] 440FX PMC register 0x00 selected
+00001880525d[PCI  ] 440FX PMC read  register 0x02 value 0x00001237
+00001880542d[PCI  ] 440FX PMC register 0x08 selected
+00001880544d[PCI  ] 440FX PMC read  register 0x0a value 0x00000600
+00001880550d[PCI  ] 440FX PMC register 0x30 selected
+00001880552d[PCI  ] 440FX PMC read  register 0x30 value 0x00000000
+00001880583d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x01
+00001880589d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x01
+00001880606d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x02
+00001880612d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x02
+00001880629d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x03
+00001880635d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x03
+00001880652d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x04
+00001880658d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x04
+00001880675d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x05
+00001880681d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x05
+00001880698d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x06
+00001880704d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x06
+00001880721d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x07
+00001880727d[PCI  ] 440FX request for bus 0x00 device 0x00 function 0x07
+00001880744d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001880750d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001880769d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001880777d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x00
+00001880810d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001880816d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001880835d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001880843d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x01
+00001880876d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x02
+00001880882d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x02
+00001880899d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001880905d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001880924d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001880932d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x03
+00001880965d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x04
+00001880971d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x04
+00001880988d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x05
+00001880994d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x05
+00001881011d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x06
+00001881017d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x06
+00001881034d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x07
+00001881040d[PCI  ] 440FX request for bus 0x00 device 0x01 function 0x07
+00001881057d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x00
+00001881063d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x00
+00001881080d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x01
+00001881086d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x01
+00001881103d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x02
+00001881109d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x02
+00001881126d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x03
+00001881132d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x03
+00001881149d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x04
+00001881155d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x04
+00001881172d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x05
+00001881178d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x05
+00001881195d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x06
+00001881201d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x06
+00001881218d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x07
+00001881224d[PCI  ] 440FX request for bus 0x00 device 0x02 function 0x07
+00001881241d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x00
+00001881247d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x00
+00001881264d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x01
+00001881270d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x01
+00001881287d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x02
+00001881293d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x02
+00001881310d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x03
+00001881316d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x03
+00001881333d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x04
+00001881339d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x04
+00001881356d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x05
+00001881362d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x05
+00001881379d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x06
+00001881385d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x06
+00001881402d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x07
+00001881408d[PCI  ] 440FX request for bus 0x00 device 0x03 function 0x07
+00001881425d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x00
+00001881431d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x00
+00001881448d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x01
+00001881454d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x01
+00001881471d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x02
+00001881477d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x02
+00001881494d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x03
+00001881500d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x03
+00001881517d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x04
+00001881523d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x04
+00001881540d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x05
+00001881546d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x05
+00001881563d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x06
+00001881569d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x06
+00001881586d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x07
+00001881592d[PCI  ] 440FX request for bus 0x00 device 0x04 function 0x07
+00001881609d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x00
+00001881615d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x00
+00001881632d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x01
+00001881638d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x01
+00001881655d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x02
+00001881661d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x02
+00001881678d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x03
+00001881684d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x03
+00001881701d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x04
+00001881707d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x04
+00001881724d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x05
+00001881730d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x05
+00001881747d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x06
+00001881753d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x06
+00001881770d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x07
+00001881776d[PCI  ] 440FX request for bus 0x00 device 0x05 function 0x07
+00001881793d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x00
+00001881799d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x00
+00001881816d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x01
+00001881822d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x01
+00001881839d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x02
+00001881845d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x02
+00001881862d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x03
+00001881868d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x03
+00001881885d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x04
+00001881891d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x04
+00001881908d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x05
+00001881914d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x05
+00001881931d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x06
+00001881937d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x06
+00001881954d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x07
+00001881960d[PCI  ] 440FX request for bus 0x00 device 0x06 function 0x07
+00001881977d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x00
+00001881983d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x00
+00001882000d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x01
+00001882006d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x01
+00001882023d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x02
+00001882029d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x02
+00001882046d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x03
+00001882052d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x03
+00001882069d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x04
+00001882075d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x04
+00001882092d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x05
+00001882098d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x05
+00001882115d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x06
+00001882121d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x06
+00001882138d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x07
+00001882144d[PCI  ] 440FX request for bus 0x00 device 0x07 function 0x07
+00001882161d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x00
+00001882167d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x00
+00001882184d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x01
+00001882190d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x01
+00001882207d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x02
+00001882213d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x02
+00001882230d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x03
+00001882236d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x03
+00001882253d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x04
+00001882259d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x04
+00001882276d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x05
+00001882282d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x05
+00001882299d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x06
+00001882305d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x06
+00001882322d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x07
+00001882328d[PCI  ] 440FX request for bus 0x00 device 0x08 function 0x07
+00001882345d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x00
+00001882351d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x00
+00001882368d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x01
+00001882374d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x01
+00001882391d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x02
+00001882397d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x02
+00001882414d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x03
+00001882420d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x03
+00001882437d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x04
+00001882443d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x04
+00001882460d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x05
+00001882466d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x05
+00001882483d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x06
+00001882489d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x06
+00001882506d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x07
+00001882512d[PCI  ] 440FX request for bus 0x00 device 0x09 function 0x07
+00001882529d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x00
+00001882535d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x00
+00001882552d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x01
+00001882558d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x01
+00001882575d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x02
+00001882581d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x02
+00001882598d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x03
+00001882604d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x03
+00001882621d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x04
+00001882627d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x04
+00001882644d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x05
+00001882650d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x05
+00001882667d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x06
+00001882673d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x06
+00001882690d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x07
+00001882696d[PCI  ] 440FX request for bus 0x00 device 0x0a function 0x07
+00001882713d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x00
+00001882719d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x00
+00001882736d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x01
+00001882742d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x01
+00001882759d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x02
+00001882765d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x02
+00001882782d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x03
+00001882788d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x03
+00001882805d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x04
+00001882811d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x04
+00001882828d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x05
+00001882834d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x05
+00001882851d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x06
+00001882857d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x06
+00001882874d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x07
+00001882880d[PCI  ] 440FX request for bus 0x00 device 0x0b function 0x07
+00001882897d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x00
+00001882903d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x00
+00001882920d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x01
+00001882926d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x01
+00001882943d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x02
+00001882949d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x02
+00001882966d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x03
+00001882972d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x03
+00001882989d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x04
+00001882995d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x04
+00001883012d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x05
+00001883018d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x05
+00001883035d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x06
+00001883041d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x06
+00001883058d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x07
+00001883064d[PCI  ] 440FX request for bus 0x00 device 0x0c function 0x07
+00001883081d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x00
+00001883087d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x00
+00001883104d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x01
+00001883110d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x01
+00001883127d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x02
+00001883133d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x02
+00001883150d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x03
+00001883156d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x03
+00001883173d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x04
+00001883179d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x04
+00001883196d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x05
+00001883202d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x05
+00001883219d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x06
+00001883225d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x06
+00001883242d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x07
+00001883248d[PCI  ] 440FX request for bus 0x00 device 0x0d function 0x07
+00001883265d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x00
+00001883271d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x00
+00001883288d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x01
+00001883294d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x01
+00001883311d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x02
+00001883317d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x02
+00001883334d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x03
+00001883340d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x03
+00001883357d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x04
+00001883363d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x04
+00001883380d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x05
+00001883386d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x05
+00001883403d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x06
+00001883409d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x06
+00001883426d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x07
+00001883432d[PCI  ] 440FX request for bus 0x00 device 0x0e function 0x07
+00001883449d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x00
+00001883455d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x00
+00001883472d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x01
+00001883478d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x01
+00001883495d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x02
+00001883501d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x02
+00001883518d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x03
+00001883524d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x03
+00001883541d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x04
+00001883547d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x04
+00001883564d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x05
+00001883570d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x05
+00001883587d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x06
+00001883593d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x06
+00001883610d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x07
+00001883616d[PCI  ] 440FX request for bus 0x00 device 0x0f function 0x07
+00001883633d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x00
+00001883639d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x00
+00001883656d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x01
+00001883662d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x01
+00001883679d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x02
+00001883685d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x02
+00001883702d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x03
+00001883708d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x03
+00001883725d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x04
+00001883731d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x04
+00001883748d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x05
+00001883754d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x05
+00001883771d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x06
+00001883777d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x06
+00001883794d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x07
+00001883800d[PCI  ] 440FX request for bus 0x00 device 0x10 function 0x07
+00001883817d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x00
+00001883823d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x00
+00001883840d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x01
+00001883846d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x01
+00001883863d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x02
+00001883869d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x02
+00001883886d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x03
+00001883892d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x03
+00001883909d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x04
+00001883915d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x04
+00001883932d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x05
+00001883938d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x05
+00001883955d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x06
+00001883961d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x06
+00001883978d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x07
+00001883984d[PCI  ] 440FX request for bus 0x00 device 0x11 function 0x07
+00001884001d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x00
+00001884007d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x00
+00001884024d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x01
+00001884030d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x01
+00001884047d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x02
+00001884053d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x02
+00001884070d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x03
+00001884076d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x03
+00001884093d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x04
+00001884099d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x04
+00001884116d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x05
+00001884122d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x05
+00001884139d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x06
+00001884145d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x06
+00001884162d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x07
+00001884168d[PCI  ] 440FX request for bus 0x00 device 0x12 function 0x07
+00001884185d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x00
+00001884191d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x00
+00001884208d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x01
+00001884214d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x01
+00001884231d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x02
+00001884237d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x02
+00001884254d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x03
+00001884260d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x03
+00001884277d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x04
+00001884283d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x04
+00001884300d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x05
+00001884306d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x05
+00001884323d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x06
+00001884329d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x06
+00001884346d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x07
+00001884352d[PCI  ] 440FX request for bus 0x00 device 0x13 function 0x07
+00001884369d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x00
+00001884375d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x00
+00001884392d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x01
+00001884398d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x01
+00001884415d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x02
+00001884421d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x02
+00001884438d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x03
+00001884444d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x03
+00001884461d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x04
+00001884467d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x04
+00001884484d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x05
+00001884490d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x05
+00001884507d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x06
+00001884513d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x06
+00001884530d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x07
+00001884536d[PCI  ] 440FX request for bus 0x00 device 0x14 function 0x07
+00001884553d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x00
+00001884559d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x00
+00001884576d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x01
+00001884582d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x01
+00001884599d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x02
+00001884605d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x02
+00001884622d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x03
+00001884628d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x03
+00001884645d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x04
+00001884651d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x04
+00001884668d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x05
+00001884674d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x05
+00001884691d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x06
+00001884697d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x06
+00001884714d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x07
+00001884720d[PCI  ] 440FX request for bus 0x00 device 0x15 function 0x07
+00001884737d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x00
+00001884743d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x00
+00001884760d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x01
+00001884766d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x01
+00001884783d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x02
+00001884789d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x02
+00001884806d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x03
+00001884812d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x03
+00001884829d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x04
+00001884835d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x04
+00001884852d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x05
+00001884858d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x05
+00001884875d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x06
+00001884881d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x06
+00001884898d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x07
+00001884904d[PCI  ] 440FX request for bus 0x00 device 0x16 function 0x07
+00001884921d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x00
+00001884927d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x00
+00001884944d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x01
+00001884950d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x01
+00001884967d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x02
+00001884973d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x02
+00001884990d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x03
+00001884996d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x03
+00001885013d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x04
+00001885019d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x04
+00001885036d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x05
+00001885042d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x05
+00001885059d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x06
+00001885065d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x06
+00001885082d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x07
+00001885088d[PCI  ] 440FX request for bus 0x00 device 0x17 function 0x07
+00001885105d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x00
+00001885111d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x00
+00001885128d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x01
+00001885134d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x01
+00001885151d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x02
+00001885157d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x02
+00001885174d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x03
+00001885180d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x03
+00001885197d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x04
+00001885203d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x04
+00001885220d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x05
+00001885226d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x05
+00001885243d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x06
+00001885249d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x06
+00001885266d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x07
+00001885272d[PCI  ] 440FX request for bus 0x00 device 0x18 function 0x07
+00001885289d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x00
+00001885295d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x00
+00001885312d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x01
+00001885318d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x01
+00001885335d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x02
+00001885341d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x02
+00001885358d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x03
+00001885364d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x03
+00001885381d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x04
+00001885387d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x04
+00001885404d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x05
+00001885410d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x05
+00001885427d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x06
+00001885433d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x06
+00001885450d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x07
+00001885456d[PCI  ] 440FX request for bus 0x00 device 0x19 function 0x07
+00001885473d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x00
+00001885479d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x00
+00001885496d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x01
+00001885502d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x01
+00001885519d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x02
+00001885525d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x02
+00001885542d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x03
+00001885548d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x03
+00001885565d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x04
+00001885571d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x04
+00001885588d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x05
+00001885594d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x05
+00001885611d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x06
+00001885617d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x06
+00001885634d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x07
+00001885640d[PCI  ] 440FX request for bus 0x00 device 0x1a function 0x07
+00001885657d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x00
+00001885663d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x00
+00001885680d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x01
+00001885686d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x01
+00001885703d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x02
+00001885709d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x02
+00001885726d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x03
+00001885732d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x03
+00001885749d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x04
+00001885755d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x04
+00001885772d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x05
+00001885778d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x05
+00001885795d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x06
+00001885801d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x06
+00001885818d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x07
+00001885824d[PCI  ] 440FX request for bus 0x00 device 0x1b function 0x07
+00001885841d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x00
+00001885847d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x00
+00001885864d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x01
+00001885870d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x01
+00001885887d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x02
+00001885893d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x02
+00001885910d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x03
+00001885916d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x03
+00001885933d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x04
+00001885939d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x04
+00001885956d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x05
+00001885962d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x05
+00001885979d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x06
+00001885985d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x06
+00001886002d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x07
+00001886008d[PCI  ] 440FX request for bus 0x00 device 0x1c function 0x07
+00001886025d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x00
+00001886031d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x00
+00001886048d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x01
+00001886054d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x01
+00001886071d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x02
+00001886077d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x02
+00001886094d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x03
+00001886100d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x03
+00001886117d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x04
+00001886123d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x04
+00001886140d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x05
+00001886146d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x05
+00001886163d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x06
+00001886169d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x06
+00001886186d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x07
+00001886192d[PCI  ] 440FX request for bus 0x00 device 0x1d function 0x07
+00001886209d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x00
+00001886215d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x00
+00001886232d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x01
+00001886238d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x01
+00001886255d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x02
+00001886261d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x02
+00001886278d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x03
+00001886284d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x03
+00001886301d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x04
+00001886307d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x04
+00001886324d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x05
+00001886330d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x05
+00001886347d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x06
+00001886353d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x06
+00001886370d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x07
+00001886376d[PCI  ] 440FX request for bus 0x00 device 0x1e function 0x07
+00001886393d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x00
+00001886399d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x00
+00001886416d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x01
+00001886422d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x01
+00001886439d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x02
+00001886445d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x02
+00001886462d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x03
+00001886468d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x03
+00001886485d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x04
+00001886491d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x04
+00001886508d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x05
+00001886514d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x05
+00001886531d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x06
+00001886537d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x06
+00001886554d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x07
+00001886560d[PCI  ] 440FX request for bus 0x00 device 0x1f function 0x07
+00001889768i[BIOS ] MP table addr=0x000fa510 MPC table addr=0x000fa440 size=0xc8
+00001891583i[BIOS ] SMBIOS table addr=0x000fa520
+00001891634i[MEM0 ] allocate_block: block=0x1f used 0x2 of 0x20
+00001894562i[BIOS ] Firmware waking vector 0x1ff00cc
+00001899421i[BIOS ] ACPI tables: RSDP addr=0x000fa640 ACPI DATA addr=0x01ff0000 size=0x1f22
+00001899446d[PCI  ] 440FX PMC register 0x58 selected
+00001899449d[PCI  ] 440FX PMC read  register 0x59 value 0x00000030
+00001899453d[PCI  ] 440FX PMC register 0x58 selected
+00001899458i[PCI  ] 440FX PMC write to PAM register 59 (TLB Flush)
+00001900189i[BIOS ] bios_table_cur_addr: 0x000fa664
+00002027807i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00002027878i[BXVGA] VBE known Display Interface b0c0
+00002027910i[BXVGA] VBE known Display Interface b0c5
+00002030835i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00002375290i[BIOS ] ata0-0: PCHS=121/16/63 translation=none LCHS=121/16/63
+00006252128i[BIOS ] IDE time out
+00010000007i[XGUI ] charmap update. Font Height is 16
+00156566676i[BIOS ] Booting from 0000:7c00
+00156780751i[MEM0 ] allocate_block: block=0x1 used 0x3 of 0x20
