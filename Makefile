@@ -13,7 +13,7 @@ build/kernel.bin: $(objects)
 	ld -Ttext 0xc0001500 -e main -o build/kernel.bin $(objects) -m elf_i386
 
 build/memory.o:
-	gcc -I kernel/ -o build/memory.o -c -m32 -I lib/kernel/ -I lib/ kernel/memory.c
+	gcc -I kernel/ -o build/memory.o -c -m32 -I lib/kernel/ -I lib/ kernel/memory.c -fno-builtin
 build/bitmap.o:
 	gcc -I kernel/ -o build/bitmap.o -c -m32 -I lib/kernel/ -I lib/ lib/kernel/bitmap.c -fno-builtin   
 build/debug.o:
