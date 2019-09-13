@@ -1,8 +1,9 @@
 #include "types.h"
 #include "x86.h"
+#include "stdint.h"
 
 void*
-memset(void *dst, int c, uint n)
+memset(void *dst, int c, uint8_t n)
 {
   if ((int)dst%4 == 0 && n%4 == 0){
     c &= 0xFF;
@@ -13,7 +14,7 @@ memset(void *dst, int c, uint n)
 }
 
 int
-memcmp(const void *v1, const void *v2, uint n)
+memcmp(const void *v1, const void *v2, uint8_t n)
 {
   const uchar *s1, *s2;
 
@@ -29,7 +30,7 @@ memcmp(const void *v1, const void *v2, uint n)
 }
 
 void*
-memmove(void *dst, const void *src, uint n)
+memmove(void *dst, const void *src, uint8_t n)
 {
   const char *s;
   char *d;
@@ -50,13 +51,13 @@ memmove(void *dst, const void *src, uint n)
 
 // memcpy exists to placate GCC.  Use memmove.
 void*
-memcpy(void *dst, const void *src, uint n)
+memcpy(void *dst, const void *src, uint8_t n)
 {
   return memmove(dst, src, n);
 }
 
 int
-strncmp(const char *p, const char *q, uint n)
+strncmp(const char *p, const char *q, uint8_t n)
 {
   while(n > 0 && *p && *p == *q)
     n--, p++, q++;
