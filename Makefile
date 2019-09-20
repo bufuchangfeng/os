@@ -1,5 +1,6 @@
 objects =  build/main.o build/print.o build/interrupt.o build/vectors.o build/timer.o	\
-	   build/string.o build/debug.o build/bitmap.o build/memory.o
+	   build/string.o build/debug.o build/bitmap.o build/memory.o	\
+	   build/thread.o
 
 all: build/kernel.bin boot loader
 	dd if=build/loader.bin of=os.img bs=512 count=4 seek=2 conv=notrunc
@@ -12,6 +13,8 @@ loader:
 build/kernel.bin: $(objects)
 	ld -Ttext 0xc0001500 -e main -o build/kernel.bin $(objects) -m elf_i386
 
+build/thread.o:
+	gcc -I thread/ -o build/thread.o -c -m32 thread/thread.c
 build/memory.o:
 	gcc -I kernel/ -o build/memory.o -c -m32 -I lib/kernel/ -I lib/ kernel/memory.c -fno-builtin
 build/bitmap.o:
@@ -29,7 +32,7 @@ build/vectors.o:
 build/interrupt.o:
 	gcc -I kernel/ -I device/ -o build/interrupt.o kernel/interrupt.c -c -m32 -fno-stack-protector -I lib/kernel
 build/main.o: kernel/main.c
-	gcc -I kernel/ -o build/main.o kernel/main.c -I lib/kernel/ -c -m32
+	gcc -I kernel/ -o build/main.o kernel/main.c -I lib/kernel/ -c -m32 -I thread/
 .PHONY: clean boot loader
 clean:
 	rm -rf build/kernel.bin $(objects)
