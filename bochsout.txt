@@ -33,37 +33,37 @@
 00000000000i[     ]   SB16 support: yes
 00000000000i[     ]   USB support: yes
 00000000000i[     ]   VGA extension support: vbe cirrus
-00000000000i[MEM0 ] allocated memory at 0x7f969f67a010. after alignment, vector=0x7f969f67b000
+00000000000i[MEM0 ] allocated memory at 0x7f0588fec010. after alignment, vector=0x7f0588fed000
 00000000000i[MEM0 ] 32.00MB
 00000000000i[MEM0 ] mem block size = 0x00100000, blocks=32
 00000000000i[MEM0 ] rom at 0xfffe0000/131072 ('/usr/share/bochs/BIOS-bochs-latest')
-00000000000i[     ] lt_dlhandle is 0x4a557f0
+00000000000i[     ] lt_dlhandle is 0x2bc37f0
 00000000000i[PLGIN] loaded plugin libbx_hdimage.so
-00000000000i[     ] lt_dlhandle is 0x4a56180
+00000000000i[     ] lt_dlhandle is 0x2bc4180
 00000000000i[PLGIN] loaded plugin libbx_pci.so
-00000000000i[     ] lt_dlhandle is 0x4a56d00
+00000000000i[     ] lt_dlhandle is 0x2bc4d00
 00000000000i[PLGIN] loaded plugin libbx_pci2isa.so
-00000000000i[     ] lt_dlhandle is 0x4a57710
+00000000000i[     ] lt_dlhandle is 0x2bc5710
 00000000000i[PLGIN] loaded plugin libbx_acpi.so
-00000000000i[     ] lt_dlhandle is 0x4a58110
+00000000000i[     ] lt_dlhandle is 0x2bc6110
 00000000000i[PLGIN] loaded plugin libbx_cmos.so
-00000000000i[     ] lt_dlhandle is 0x4a58a50
+00000000000i[     ] lt_dlhandle is 0x2bc6a50
 00000000000i[PLGIN] loaded plugin libbx_dma.so
-00000000000i[     ] lt_dlhandle is 0x4a594e0
+00000000000i[     ] lt_dlhandle is 0x2bc74e0
 00000000000i[PLGIN] loaded plugin libbx_pic.so
-00000000000i[     ] lt_dlhandle is 0x4a59d80
+00000000000i[     ] lt_dlhandle is 0x2bc7d80
 00000000000i[PLGIN] loaded plugin libbx_pit.so
-00000000000i[     ] lt_dlhandle is 0x4a5a7b0
+00000000000i[     ] lt_dlhandle is 0x2bc87b0
 00000000000i[PLGIN] loaded plugin libbx_floppy.so
-00000000000i[     ] lt_dlhandle is 0x4a5b3a0
+00000000000i[     ] lt_dlhandle is 0x2bc93a0
 00000000000i[PLGIN] loaded plugin libbx_vga.so
-00000000000i[     ] lt_dlhandle is 0x4a5bb30
+00000000000i[     ] lt_dlhandle is 0x2bc9b30
 00000000000i[PLGIN] loaded plugin libbx_ioapic.so
-00000000000i[     ] lt_dlhandle is 0x4a5c570
+00000000000i[     ] lt_dlhandle is 0x2bca570
 00000000000i[PLGIN] loaded plugin libbx_keyboard.so
-00000000000i[     ] lt_dlhandle is 0x4a5ce10
+00000000000i[     ] lt_dlhandle is 0x2bcae10
 00000000000i[PLGIN] loaded plugin libbx_harddrv.so
-00000000000i[     ] lt_dlhandle is 0x4a6ef00
+00000000000i[     ] lt_dlhandle is 0x2bdcf00
 00000000000i[PLGIN] loaded plugin libbx_pci_ide.so
 00000000000i[PLGIN] init_dev of 'pci' plugin device by virtual method
 00000000000i[PCI  ] 440FX Host bridge present at device 0, function 0
@@ -71,7 +71,7 @@
 00000000000i[PCI  ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
 00000000000i[PLGIN] init_dev of 'cmos' plugin device by virtual method
 00000000000i[CMOS ] Using local time for initial clock
-00000000000i[CMOS ] Setting initial clock to: Fri Sep 13 20:24:00 2019 (time0=1568377440)
+00000000000i[CMOS ] Setting initial clock to: Fri Sep 20 14:35:45 2019 (time0=1568961345)
 00000000000i[PLGIN] init_dev of 'dma' plugin device by virtual method
 00000000000i[DMA  ] channel 4 used by cascade
 00000000000i[PLGIN] init_dev of 'pic' plugin device by virtual method
@@ -1895,28 +1895,27 @@
 00010000007i[XGUI ] charmap update. Font Height is 16
 00156566676i[BIOS ] Booting from 0000:7c00
 00156783097i[MEM0 ] allocate_block: block=0x1 used 0x3 of 0x20
-03269991983i[     ] Ctrl-C detected in signal handler.
-03269991984i[XGUI ] Mouse capture off
-03269991984i[XGUI ] Mouse capture off
-03269991984i[     ] dbg: Quit
-03269991984i[CPU0 ] CPU is in protected mode (active)
-03269991984i[CPU0 ] CS.mode = 32 bit
-03269991984i[CPU0 ] SS.mode = 32 bit
-03269991984i[CPU0 ] EFER   = 0x00000000
-03269991984i[CPU0 ] | EAX=c0100000  EBX=00070094  ECX=00000000  EDX=00000000
-03269991984i[CPU0 ] | ESP=c009efe0  EBP=c009eff8  ESI=00070000  EDI=00000000
-03269991984i[CPU0 ] | IOPL=0 id vip vif ac vm rf nt of df if tf SF zf af pf cf
-03269991984i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
-03269991984i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
-03269991984i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-03269991984i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-03269991984i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-03269991984i[CPU0 ] |  FS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
-03269991984i[CPU0 ] |  GS:0018( 0003| 0|  0) c00b8000 00007fff 1 1
-03269991984i[CPU0 ] | EIP=c000156a (c000156a)
-03269991984i[CPU0 ] | CR0=0xe0000011 CR2=0x00000000
-03269991984i[CPU0 ] | CR3=0x00100000 CR4=0x00000000
-03269991984d[PCI  ] Exit
-03269991984i[CMOS ] Last time is 1568377505 (Fri Sep 13 20:25:05 2019)
-03269991984i[XGUI ] Exit
-03269991984i[CTRL ] quit_sim called with exit code 0
+01381489869i[     ] Ctrl-C detected in signal handler.
+01381489870i[XGUI ] Mouse capture off
+01381489870i[     ] dbg: Quit
+01381489870i[CPU0 ] CPU is in protected mode (active)
+01381489870i[CPU0 ] CS.mode = 32 bit
+01381489870i[CPU0 ] SS.mode = 32 bit
+01381489870i[CPU0 ] EFER   = 0x00000000
+01381489870i[CPU0 ] | EAX=c0100000  EBX=00070094  ECX=00000000  EDX=00000000
+01381489870i[CPU0 ] | ESP=c009efe0  EBP=c009eff8  ESI=00070000  EDI=00000000
+01381489870i[CPU0 ] | IOPL=0 id vip vif ac vm rf nt of df if tf SF zf af pf cf
+01381489870i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+01381489870i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+01381489870i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+01381489870i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+01381489870i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+01381489870i[CPU0 ] |  FS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
+01381489870i[CPU0 ] |  GS:0018( 0003| 0|  0) c00b8000 00007fff 1 1
+01381489870i[CPU0 ] | EIP=c000156a (c000156a)
+01381489870i[CPU0 ] | CR0=0xe0000011 CR2=0x00000000
+01381489870i[CPU0 ] | CR3=0x00100000 CR4=0x00000000
+01381489870d[PCI  ] Exit
+01381489870i[CMOS ] Last time is 1568961372 (Fri Sep 20 14:36:12 2019)
+01381489870i[XGUI ] Exit
+01381489870i[CTRL ] quit_sim called with exit code 0
